@@ -1,0 +1,31 @@
+.TH SETSID 1 "September 2014" "setsid" "User Commands"
+.SH NAME
+setsid \- run a program in a new session
+.SH SYNOPSIS
+.B setsid
+.I program
+.RI [ arg ...]
+.SH DESCRIPTION
+.B setsid
+runs a program in a new session.
+.SH OPTIONS
+.TP
+\fB\-c\fP, \fB\-\-ctty\fP
+Set the controlling terminal to the current one.
+.TP
+\fB\-w\fP, \fB\-\-wait\fP
+Wait the execution of the program to end, and return the exit value of
+the child as return value of the
+.BR setsid .
+.SH "SEE ALSO"
+.BR setsid (2)
+.SH AUTHORS
+Rick Sladkey <jrs[nospam]world.std.com> - writing the original setsid utility.
+.br
+Latchezar Tzvetkoff <latchezar[nospam]tzvetkoff.net> - porting the code.
+.SH AVAILABILITY
+The Mac OS X port of the \fBsetsid\fP command is available at
+https://github.com/tzvetkoff/setsid-macosx.
+.br
+The original \fBsetsid\fP command is part of the util-linux package and
+is available from ftp://ftp.kernel.org/pub/linux/utils/util-linux/.
